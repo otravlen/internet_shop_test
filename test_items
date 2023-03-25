@@ -10,7 +10,7 @@ link = 'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/'
 
 class TestMainPage():
 
-    def test_button(self, browser):
+    def test_button_add_to_basket(self, browser):
         browser.get(link)
         browser.implicitly_wait(10)
         button = browser.find_element(By.CSS_SELECTOR, '.btn-add-to-basket')
